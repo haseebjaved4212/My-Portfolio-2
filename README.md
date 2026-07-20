@@ -82,7 +82,7 @@ The integrated interactive terminal supports the following commands:
 © 2026 Haseeb Javed.
 
 
---- 
+---
 <h3 align="center">
     <img src="https://readme-typing-svg.herokuapp.com?key=1&width=400&height=40&lines=Made+with+%E2%9D%A4%EF%B8%8F+by+Haseeb+Javed" alt="Typing SVG" />
 </h3>
