@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent: var(--accent);
+  --color-border-color: var(--border-color);
+}
+
+@layer base {
+  :root {
+    --bg: #FAFAF8;
+    --surface: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #5C5C5C;
+    --accent: #2563EB;
+    --border-color: #E5E5E0;
+  }
+  
+  .dark {
+    --bg: #0B0D10;
+    --surface: #14171A;
+    --text-primary: #F2F2F0;
+    --text-secondary: #9BA1A6;
+    --accent: #5B8DEF;
+    --border-color: #22262B;
+  }
+  
+  body {
+    @apply bg-bg text-text-primary transition-colors duration-300 antialiased;
+    font-family: var(--font-sans);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
